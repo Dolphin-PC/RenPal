@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1059935049745",
+    "firebase_url": "https://renpal-8cbeb.firebaseio.com",
+    "project_id": "renpal-8cbeb",
+    "storage_bucket": "renpal-8cbeb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1059935049745:android:c6f81e4d344fcfec9ab9b0",
+        "android_client_info": {
+          "package_name": "pcdolphin.expo.renpal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1059935049745-6isb07706m6e7fsq9empm4r1vb1eslg6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiQYKBAiKzZI5_S1auKFHKLkY9nl2c4R8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1059935049745-6isb07706m6e7fsq9empm4r1vb1eslg6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1059935049745-vm4edqd7htnaspm6c27m044qgdmvnnni.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "pcdolphin.expo.renpal"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

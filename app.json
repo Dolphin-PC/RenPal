@@ -15,7 +15,18 @@
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
+      "bundleIdentifier" : "pcdolphin.expo.renpal",
+      "config": {
+        "googleSignIn": {
+          "reservedClientId": "com.googleusercontent.apps.1059935049745-vm4edqd7htnaspm6c27m044qgdmvnnni"
+        }
+      },
+      "googleServicesFile": "./GoogleService-Info.plist",
       "supportsTablet": true
+    },
+    "android":{
+      "package": "pcdolphin.expo.renpal",
+      "googleServicesFile":"./google-services.json"
     },
     "web": {
       "favicon": "./assets/splash.png"

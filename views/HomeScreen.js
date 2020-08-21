@@ -1,6 +1,10 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
+//colors
+import * as colors from '../assets/colors'
+import { color } from 'react-native-reanimated';
+
 function HomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
@@ -42,7 +46,7 @@ const styles = StyleSheet.create({
   section_cyl: {
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'blue',
+    backgroundColor: colors.signature_Blue,
     height: '33.3%',
   },
   text_cyl: {
@@ -52,12 +56,12 @@ const styles = StyleSheet.create({
   section_sye: {
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'yellow',
+    backgroundColor: colors.signature_Yellow,
     height: '33.3%',
   },
   text_sye: {
     fontSize: 30,
-    color: 'blue',
+    color: colors.signature_Blue,
   },
   section_fyip: {
     alignItems: 'center',
@@ -67,6 +71,6 @@ const styles = StyleSheet.create({
   },
   text_fyip: {
     fontSize: 30,
-    color: 'yellow',
+    color: colors.signature_Yellow,
   },
 });
