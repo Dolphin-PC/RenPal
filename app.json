@@ -15,18 +15,18 @@
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
-      "bundleIdentifier" : "pcdolphin.expo.renpal",
+      "bundleIdentifier": "pcdolphin.expo.renpal",
       "config": {
         "googleSignIn": {
-          "reservedClientId": "com.googleusercontent.apps.1059935049745-vm4edqd7htnaspm6c27m044qgdmvnnni"
+          "reservedClientId": "com.googleusercontent.apps.1059935049745-9kee50le6ncmmoboffa1p54l0ui5qqfl"
         }
       },
       "googleServicesFile": "./GoogleService-Info.plist",
       "supportsTablet": true
     },
-    "android":{
+    "android": {
       "package": "pcdolphin.expo.renpal",
-      "googleServicesFile":"./google-services.json"
+      "googleServicesFile": "./google-services.json"
     },
     "web": {
       "favicon": "./assets/splash.png"

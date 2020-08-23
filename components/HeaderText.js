@@ -1,20 +1,21 @@
-import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 
 // colors
-import * as colors from '../assets/colors'
+import * as colors from '../assets/colors';
 
 const HeaderText = (props) => {
-    return (
-        <Text style={styles.header}>{props.text}</Text>
-    )
-}
+  return <Text style={styles.header}>{props.text}</Text>;
+};
 
-export default HeaderText
+export default HeaderText;
 
 const styles = StyleSheet.create({
-    header:{
-        color:colors.signature_Blue,
-        fontSize:30
-      }
-})
+  header: {
+    color: colors.signature_Blue,
+    fontSize: 30,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginBottom: 30,
+  },
+});
