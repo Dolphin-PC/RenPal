@@ -9,7 +9,7 @@ const RecommendCard = (props) => {
     <View style={styles.container}>
       <View style={styles.imageView}>
         <Image
-          borderRadius='5'
+          borderRadius='10'
           resizeMode='contain'
           style={styles.imageStyle}
           source={props.imageSrc}

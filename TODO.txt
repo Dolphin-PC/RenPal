@@ -1,0 +1,5 @@
+IOS - AOS 
+발견된 호환 문제
+
+1. 'Confirm' button color
+

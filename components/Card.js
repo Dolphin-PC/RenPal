@@ -45,7 +45,7 @@ const Card = (props) => {
       </View>
       <View style={styles.list}>
         {props.ListData.map((context, index) => {
-          return <ListText text={context.text} />;
+          return <ListText key={index} text={context.text} />;
         })}
       </View>
     </View>

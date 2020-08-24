@@ -7,6 +7,7 @@ import {
   Button,
   SafeAreaView,
   ScrollView,
+  TouchableHighlight,
 } from 'react-native';
 import {} from 'react-native-elements';
 
@@ -98,14 +99,19 @@ function ScreenCYL(props) {
         </ScrollView>
       </View>
 
-      <View style={styles.BottomButton}>
-        <Button
-          title='CONFIRM'
-          color={colors.signature_Blue}
-          backgroundColor={colors.signature_Yellow}
-          onPress={() => props.navigation.navigate('SearchScreen')}
-        />
-      </View>
+      <TouchableHighlight
+        onPress={() => props.navigation.navigate('SearchScreen')}
+        style={styles.BottomButton}
+        underlayColor={colors.signature_Yellow}
+      >
+        <View>
+          <Button
+            title='CONFIRM'
+            color={colors.signature_Blue}
+            backgroundColor={colors.signature_Yellow}
+          />
+        </View>
+      </TouchableHighlight>
     </SafeAreaView>
   );
 }

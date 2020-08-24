@@ -7,6 +7,7 @@ import {
   ScrollView,
   SafeAreaView,
   ActivityIndicator,
+  TouchableHighlight,
 } from 'react-native';
 import HeaderText from '../components/HeaderText';
 
@@ -63,6 +64,7 @@ const SearchScreen = (props) => {
           {RecommendListData.map((context, index) => {
             return (
               <RecommendCard
+                key={index}
                 imageSrc={context.imgSrc}
                 headerText={context.headerText}
                 descText={context.descText}
@@ -71,15 +73,19 @@ const SearchScreen = (props) => {
           })}
         </ScrollView>
       </View>
-
-      <View style={styles.BottomButton}>
-        <Button
-          title='CONFIRM'
-          color={colors.signature_Blue}
-          backgroundColor={colors.signature_Yellow}
-          onPress={() => props.navigation.navigate('SearchScreen')}
-        />
-      </View>
+      <TouchableHighlight
+        onPress={() => props.navigation.navigate('SelectPaymentScreen')}
+        style={styles.BottomButton}
+        underlayColor={colors.signature_Yellow}
+      >
+        <View>
+          <Button
+            title='CONFIRM'
+            color={colors.signature_Blue}
+            backgroundColor={colors.signature_Yellow}
+          />
+        </View>
+      </TouchableHighlight>
     </SafeAreaView>
   );
 };

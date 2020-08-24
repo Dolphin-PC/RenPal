@@ -24,6 +24,9 @@ import SearchScreen from './views/SearchScreen';
 
 import firebase from 'firebase';
 import { firebaseConfig } from './firebaseConfig';
+import SelectPaymentScreen from './views/SelectPaymentScreen';
+import PaymentScreen from './views/PaymentScreen';
+import VisitScreen from './views/VisitScreen';
 
 if (!firebase.apps.length) {
   firebase.initializeApp(firebaseConfig);
@@ -42,6 +45,12 @@ const App = () => {
         <Stack.Screen name='SYE' component={ScreenSYE} />
         <Stack.Screen name='FYIP' component={ScreenFYIP} />
         <Stack.Screen name='SearchScreen' component={SearchScreen} />
+        <Stack.Screen
+          name='SelectPaymentScreen'
+          component={SelectPaymentScreen}
+        />
+        <Stack.Screen name='PaymentScreen' component={PaymentScreen} />
+        <Stack.Screen name='VisitScreen' component={VisitScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
